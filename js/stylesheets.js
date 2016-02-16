@@ -11,17 +11,17 @@ if (typeof window.matchMedia !== 'undefined') {
 }
 
 function adjustStyle() {
-    if (mqMd.matches) addStyle('style-768.min.css', mqMd.media);
-    if (mq992.matches) addStyle('style-992.min.css', mq992.media);
-    if (mqLg.matches) addStyle('style-1200.min.css', mqLg.media);
-    if (mq1840.matches) addStyle('style-1840.min.css', mq1840.media);
+    if (mqMd.matches) addStyle('style-min-768.css', mqMd.media);
+    if (mq992.matches) addStyle('style-min-992.css', mq992.media);
+    if (mqLg.matches) addStyle('style-min-1200.css', mqLg.media);
+    if (mq1840.matches) addStyle('style-min-1840.css', mq1840.media);
 }
 
 function addStyle(src, media) {
     (function (d, t) {
         var id = src.match(/^[^\.]+/)[0]; var g = d.createElement(t);
         if (d.getElementById(id)) return;
-        g.id = id; g.rel = 'stylesheet'; g.href = [baseUrl + 'Content/build/css/', src].join('');
+        g.id = id; g.rel = 'stylesheet'; g.href = [baseUrl + 'css/', src].join('');
         g.media = media;
         document.head.appendChild(g);
     }(document, 'link'));

@@ -25,23 +25,29 @@
 	<meta property="og:url" content="http://jupiter.com.br" />
 	<meta property="og:image" content="http://jupiter.com.br/images/og-image.png" />
 
+	 <link rel="stylesheet" href="css/bootstrap.min.css">
+	 <link rel="stylesheet" href="css/flexslider.css">
 	 <link rel="stylesheet" href="css/style.css">
 
     <!--[if lte IE 9]>
-      <link rel="stylesheet" href="css/style-768.min.css" />
-      <link rel="stylesheet" href="css/style-992.min.css" />
-      <link rel="stylesheet" href="css/style-1200.min.css" />
-      <link rel="stylesheet" href="css/style-1840.min.css" />
+      <link rel="stylesheet" href="css/style-min-768.css" />
+      <link rel="stylesheet" href="css/style-min-992.css" />
+      <link rel="stylesheet" href="css/style-min-1200.css" />
+      <link rel="stylesheet" href="css/style-min-1840.css" />
     <![endif]-->
 
 
-	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
 	<script src="js/modernizr.custom.js"></script>
 
 	<!--[if !IE]><!--><script>
 		if (/*@cc_on!@*/false) document.documentElement.className += ' lt-ie10';
 	</script><!--<![endif]-->
+
+	<script>
+		var baseUrl = '/jupiter/'; 
+	</script>
 </head>
 <body>
 
@@ -49,19 +55,29 @@
 
 	<div id="header-container">
 
-		<header class="wrapper">
+		<header>
 
-			<div class="logo">
-				<a href="#" onclick="$('#top').animatescroll();">
-					<img src="images/logo.png" alt="Jupiter" title="Jupiter" />
-				</a>
+			<div class="container">
+
+				<div class="logo">
+					<a href="#" onclick="$('#top').animatescroll();">
+						<img src="images/logo.png" alt="Jupiter" title="Jupiter" />
+					</a>
+				</div>
+
+				<nav class="nav-header" role="navigation">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Templates</a></li>
+						<li><a href="#">Pages</a></li>
+						<li><a href="#">Elements</a></li>
+						<li><a href="#">Works</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Shop</a></li>
+					</ul>				
+				</nav>
+
 			</div>
-
-			<nav class="nav-header" role="navigation">
-				<ul>
-					<li><a href="#" onclick="$('#app').animatescroll();">Home</a></li>
-				</ul>				
-			</nav>
 
 		</header>
 
@@ -81,7 +97,28 @@
 							<img src="images/bg-banner.jpg">
 						</div>
 						
-						<div class="wrapper">
+						<div class="container">
+							<div class="info">
+
+								<h2>Make a website in no time</h2>		
+
+								<p>Lorem ipsum dolor sit.</p>
+
+								<a href="#" class="btn btn-white">Download now</a>
+								<a href="#" class="btn btn-white">Discover more</a>
+							
+							</div>
+						</div>
+
+					</li>
+
+					<li>
+
+						<div class="image">
+							<img src="images/bg-banner.jpg">
+						</div>
+						
+						<div class="container">
 							<div class="info">
 
 								<h2>Make a website in no time</h2>		
@@ -457,8 +494,8 @@
 
  	<script src="js/jquery-2.1.1.min.js"></script>
  	<script src="js/jquery.flexslider-min.js"></script>
-	<script src="js/animatescroll.js"></script>
-	<script src="js/script.js"></script>
+	<script src="js/stylesheets.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>

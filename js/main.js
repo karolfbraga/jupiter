@@ -9,18 +9,16 @@ $(function() {
     responsive();
 
     $(window).resize(responsive);
-
-    fixIe();
 });
 
 function flexslider() {
     $('.banner').flexslider({
         animation: 'slide',
-        animationLoop: false,
-        controlNav: false,
-        slideshow: false,
-        prevText: '<i class="icon-lt"></i>',
-        nextText: '<i class="icon-gt"></i>'
+        animationLoop: true,
+        controlNav: true,
+        slideshow: true,
+        prevText: '<i class="icon-arrow-left"></i>',
+        nextText: '<i class="icon-arrow-right"></i>'
     });
 }
 
@@ -40,11 +38,6 @@ function inputMasks() {
 function responsive() {
     $('[data-bg-sm],[data-bg-md],[data-bg-lg]').css('background-image', dataBackgroundImage);
     $('[data-img-src]').each(dataImgSrc);
-}
-
-function fixIe() {
-    $('.lt-ie10 [placeholder]').focus(placeholderFocus).blur(placeholderBlur).trigger('blur');
-    $('.lt-ie10 [placeholder]').parents('form').submit(placeholderSubmit);
 }
 
 function dataBackgroundImage() {

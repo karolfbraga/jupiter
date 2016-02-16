@@ -1,0 +1,26 @@
+/* HOME ------------------------------------------------------------------ */
+
+#banner-container .info {
+    top: -380px;
+}
+
+#banner-container .info h2 {
+    font-size: 60px;
+    color: #fff;
+}
+
+#banner-container .btn-white {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+#banner-container .btn-white:hover, 
+#banner-container .btn-white:visited {
+    color: #fff;
+    background: #f97352;
+    border: none;
+}
+
+/* HOME ------------------------------------------------------------------ */
+
+
