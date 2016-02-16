@@ -35,11 +35,12 @@ body {
 }
 
 p {
-	color: #303030;
+	color: #777777;
 	font-size: 16px;
-	line-height: 20px;
+	line-height: 24px;
 	font-weight: 300;
-	margin: 15px 0px;
+	text-align: center;
+	margin: 30px 0px;
 }
 
 a,
@@ -71,16 +72,31 @@ a:focus { outline: 0; }
 	display: block;
 }
 
-/* titles */
-.title {
-	margin: 40px 0px 5px 0px;
+.separator {
+	width: 35px;
+	height: 3px;
+	background: #444444;
+	margin: 10px auto;
 }
 
-.title h2 {
+/* titles */
+h1.title {
+	font-size: 24px;
+	line-height: 45px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	color: #454442;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+h2.title {
 	font-size: 20px;
 	font-weight: 700;
 	color: #000;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 /* botões */
@@ -89,7 +105,6 @@ a:focus { outline: 0; }
 	height: 60px;
 	line-height: 60px;
 	padding: 0px 20px;
-	color: #fff;
 	border: none;
 	font-weight: 700;
 	font-size: 14px;
@@ -121,6 +136,21 @@ a:focus { outline: 0; }
 	border: 1px solid #f97352;
 }
 
+.btn-black {
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000;
+	background: transparent;
+	border: 1px solid #000;
+}
+
+.btn-black:hover {
+	background: #000;
+	color: #fff;
+	border: 1px solid #000;
+}
+
 /* flexslider */
 .flexslider {
 	position: relative;
@@ -129,36 +159,40 @@ a:focus { outline: 0; }
 .flexslider .flex-direction-nav {
 	position: absolute;
 	width: 100%;
-	top: 45%;
+	top: 30%;
 }
 
-.flexslider .flex-direction-nav .flex-prev,
-.flexslider .flex-direction-nav .flex-next {
+.flexslider .flex-direction-nav li a {
+	width: 40px;
+	height: 130px;
+	display: block;
+	background: #454442;
+	border-radius: 0;
+	border: 0;
 	position: absolute;
-}
-
-.flexslider .flex-direction-nav li {
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	text-align: center;
-	border: 1px solid #8c8c8c;
-	color: #8c8c8c;
-	border-radius: 50%;
-}
-
-.flexslider .flex-direction-nav a {
+	color: #fff;
 	text-indent: -9999;
-}
-
-.flexslider .flex-direction-nav .flex-prev {
-	left: auto;
-	right: 0px;
+	opacity: 0.7;
 }
 
 .flexslider .flex-direction-nav .flex-next {
 	left: 0px;
 	right: auto;
+}
+
+.flexslider .flex-direction-nav li i {
+	font-size: 30px;
+	color: #fff;
+	line-height: 130px;
+}
+
+.flexslider .flex-direction-nav .flex-prev {
+	right: 0px;
+	left: auto;
+}
+
+.flexslider .flex-control-nav {
+	display: none;
 }
 
 /* uteis */
@@ -293,6 +327,44 @@ pointer-events: none !important;
 
 /* HOME ------------------------------------------------------------------ */
 
+/* ABOUT ------------------------------------------------------------------ */
+
+#about-container img {
+	margin: 80px auto;
+	display: block;
+}
+
+/* ABOUT ------------------------------------------------------------------ */
+
+/* TEMPLATES ------------------------------------------------------------------ */
+
+#templates-container {
+	width: 100%;
+	padding: 90px 0px;
+	background: #f0f0f0;
+}
+
+#templates-container .btn {
+	margin: 60px auto;
+	display: table;
+}
+
+#templates-container .image {
+	margin: 35px 0px;
+	transition: 0.1s all linear;
+	opacity: 1;
+}
+
+#templates-container .image:hover {
+	transition: 0.1s all linear;
+	opacity: 0.6;
+}
+
+/* TEMPLATES ------------------------------------------------------------------ */
+
+
+
+
 /* IE FIX ------------------------------------------------------------------- */
 
 .lt-ie11 #banner-container {
@@ -302,15 +374,20 @@ pointer-events: none !important;
 
 /* IE FIX ------------------------------------------------------------------- */
 
-
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
 
 @font-face {
     font-family: 'icomoon';
-    src:    url('fonts/icomoon.eot?icdown');
-    src:    url('fonts/icomoon.eot?icdown#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?icdown') format('truetype'),
-        url('fonts/icomoon.woff?icdown') format('woff'),
-        url('fonts/icomoon.svg?icdown#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?icdown');
+    src: url('../fonts/icomoon.eot?icdown#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?icdown') format('truetype'),
+        url('../fonts/icomoon.woff?icdown') format('woff'),
+        url('../fonts/icomoon.svg?icdown#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }

@@ -17,8 +17,8 @@ function flexslider() {
         animationLoop: true,
         controlNav: true,
         slideshow: true,
-        prevText: '<i class="icon-arrow-left"></i>',
-        nextText: '<i class="icon-arrow-right"></i>'
+        prevText: '<i class="icon icon-arrow-right"></i>',
+        nextText: '<i class="icon icon-arrow-left"></i>'
     });
 }
 

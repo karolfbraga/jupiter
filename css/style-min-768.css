@@ -1,5 +1,9 @@
 /* HOME ------------------------------------------------------------------ */
 
+#banner-container {
+    max-height: 850px;
+}
+
 #banner-container .info {
     top: -380px;
 }
