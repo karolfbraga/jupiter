@@ -18,14 +18,23 @@
 	<link rel="apple-touch-icon" sizes="152x152" href="images/touch-icon-ipad-retina.png" />
 
 	<title>Jupiter</title>
-	<meta name="description" content="Aqui vai uma descrição bem bacana sobre esse template maravilhoso desenvolvido com muito amor para um teste da GrupoW." />
+	<meta name="description" content="Aqui vai uma descrição bem bacana sobre esse template maravilhoso desenvolvido para um teste da GrupoW." />
 	<meta name="keywords" content="template,maravilhoso,jupiter,grupow" />
 
 	<meta property="og:title" content="Jupiter" />
 	<meta property="og:url" content="http://jupiter.com.br" />
 	<meta property="og:image" content="http://jupiter.com.br/images/og-image.png" />
 
-	<link rel="stylesheet" href="css/style.css" />
+	 <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lte IE 9]>
+      <link rel="stylesheet" href="css/style-768.min.css" />
+      <link rel="stylesheet" href="css/style-992.min.css" />
+      <link rel="stylesheet" href="css/style-1200.min.css" />
+      <link rel="stylesheet" href="css/style-1840.min.css" />
+    <![endif]-->
+
+
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 
 	<script src="js/modernizr.custom.js"></script>
@@ -38,24 +47,19 @@
 
 	<span id="top"></span>
 
-	<div id="header-container" class="header-normal">
+	<div id="header-container">
 
 		<header class="wrapper">
 
 			<div class="logo">
 				<a href="#" onclick="$('#top').animatescroll();">
-					
-					<img src="images/logo.png" alt="Jupiter" class="logo-normal" />
-					
+					<img src="images/logo.png" alt="Jupiter" title="Jupiter" />
 				</a>
 			</div>
 
 			<nav class="nav-header" role="navigation">
 				<ul>
 					<li><a href="#" onclick="$('#app').animatescroll();">Home</a></li>
-					<li><a href="#" class="btn-features" onclick="$('#templates').animatescroll();">Templates</a></li>
-					<li><a href="#" onclick="$('#pages').animatescroll();">Pages</a></li>
-					<li><a href="#" onclick="$('#elements').animatescroll();">Elements</a></li>
 				</ul>				
 			</nav>
 
@@ -66,25 +70,10 @@
 	<main role="main">
 
 		<section id="banner-container">
+
 			<div class="banner flexslider" role="banner">
+				
 				<ul class="slides">
-					<li>
-
-						<div class="image">
-							<img src="images/bg-banner.jpg">
-						</div>
-						
-						<div class="wrapper">
-							<div class="info">
-
-								<h2>Tudo que você precisa. <br> A hora que você quiser </h2>		
-
-								<a href="#" id="btn-conheca" class="btn btn-green">Conheça o Briefca2e</a>
-							
-							</div>
-						</div>
-
-					</li>
 
 					<li>
 
@@ -95,117 +84,41 @@
 						<div class="wrapper">
 							<div class="info">
 
-								<h2>Tudo que você precisa. <br> A hora que você quiser </h2>		
+								<h2>Make a website in no time</h2>		
 
-								<a href="#" id="btn-conheca" class="btn btn-green">Conheça o Briefca2e</a>
+								<p>Lorem ipsum dolor sit.</p>
+
+								<a href="#" class="btn btn-white">Download now</a>
+								<a href="#" class="btn btn-white">Discover more</a>
 							
 							</div>
 						</div>
 
 					</li>
+
 				</ul>
+
 			</div>
 
 			<div class="dots">
 			</div>
 
-			<a href="#" class="btn-more"></a>
-
 		</section>
 
+		<section id="about-container">
 
-		<span id="templates">
-		</span>
+			<div class="container">
 
-		<section id="templates-container">
-			
-			<div class="wrapper">
+				<div class="row">
 
-			</div>
+					<div class="col-lg-12">
 
+						<h1 class="title">Celebrating a year of excellence</h1>
 
-		</section>
+						<p class="text">Lorem ipsum dolor sit.</p>
 
+						<img src="images/img-about.jpg" alt="Imagem sobre o template." title="Essa imagem é muito bacana.">
 
-		<span id="planos">
-		</span>
-
-		<section id="planos-container">
-
-			<div class="wrapper">
-
-				<h2 class="title">Escolha seu plano</h2>
-
-				<div class="planos">
-
-					<div class="item module">
-
-						<span class="plano-title">/Basic</span>
-
-						<span class="rs">R$</span>
-						<span class="preco">29</span>
-						<span class="preco2">,90</span>
-						<span class="mensal">mensal</span>
-
-						<ul>
-							<li>Espaço em disco <strong>1gb</strong></li>
-							<li>Devices autorizados <strong>(até 10)</strong></li>
-							<li>Mensagens mensais <strong>(10)</strong></li>
-						</ul>
-
-						<a href="/signup" id="btn-assinar" class="btn btn-transparent-white">Assinar agora</a>
-
-						<a href="planos.html" class="link">veja mais</a>
-
-					</div>
-
-					<div class="item module">
-
-						<span class="plano-title">/Pro</span>
-
-						<span class="rs">R$</span>
-						<span class="preco">29</span>
-						<span class="preco2">,90</span>
-						<span class="mensal">mensal</span>
-
-						<ul>
-							<li>Espaço em disco <strong>5gb</strong></li>
-							<li>Devices autorizados <strong>(até 30)</strong></li>
-							<li>Mensagens mensais <strong>(20)</strong></li>
-							<li>Versão web para visualização</li>
-						</ul>
-
-						<a href="/signup" id="btn-assinar" class="btn btn-transparent-white">Assinar agora</a>
-
-						<a href="planos.html" class="link">veja mais</a>
-
-					</div>
-
-					<div class="item module">
-
-						<span class="plano-title">/Enterprise</span>
-
-						<span class="rs">R$</span>
-						<span class="preco">29</span>
-						<span class="preco2">,90</span>
-						<span class="mensal">mensal</span>
-
-						<ul>
-							<li>Espaço em disco <strong>10gb</strong></li>
-							<li>Devices autorizados <strong>(até 50)</strong></li>
-							<li>Mensagens mensais <strong>(ilimitado)</strong></li>
-							<li>Versão web para visualização</li>
-						</ul>
-
-						<a href="/signup" id="btn-assinar" class="btn btn-transparent-white">Assinar agora</a>
-
-						<a href="planos.html" class="link">veja mais</a>
-
-					</div>
-
-					<div class="custom">
-						<span class="plano-title">/Custom</span>
-						<a href="#" onclick="$('#contato').animatescroll();" id="btn-fale" class="btn btn-transparent-black">Fale com a gente</a>
 					</div>
 
 				</div>
@@ -213,6 +126,332 @@
 			</div>
 
 		</section>
+
+		<section id="templates-container">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-lg-12">
+
+						<h1 class="title">Meet moons of Jupiter</h1>
+
+						<p class="text">Lorem ipsum dolor sit.</p>
+
+						<a href="#" class="btn-black">See all templates</a>
+
+						<div class="row">
+
+							<div class="col-lg-4">
+
+								<a href="#">
+
+									<div class="image">
+									</div>
+
+								</a>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<div class="start">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-12 col-lg-8">
+
+						<h2>Want a quick start?</h2>
+
+						<p>Lorem ipsum dolor sit!</p>
+
+					</div>
+
+					<div class="col-sm-12 col-lg-4">
+
+						<a href="#" class="btn btn-orange">Start a journey</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<section id="benefits-container">
+
+			<div class="col-lg-4">
+
+				<div class="item">
+
+					<h1 class="title">Great user experience</h1>
+
+					<p class="text">Lorem ipsum dolor sit.</p>
+
+					<a href="#" class="btn btn-white">Learn more</a>
+
+				</div>
+
+			</div>
+
+			<div class="col-lg-4">
+
+				<div class="item">
+
+					<h1 class="title">Handcraft perfected</h1>
+
+					<p class="text">Lorem ipsum dolor sit.</p>
+
+					<a href="#" class="btn btn-white">Learn more</a>
+
+				</div>
+
+			</div>
+
+			<div class="col-lg-4">
+
+				<div class="item">
+
+					<h1 class="title">Performant. Fluent.</h1>
+
+					<p class="text">Lorem ipsum dolor sit.</p>
+
+					<a href="#" class="btn btn-white">Learn more</a>
+
+				</div>
+
+			</div>
+
+			<div class="benefits">
+
+				<div class"container">
+
+					<div class"row">
+
+						<div class="col-sm-12 col-lg-3">
+
+							<div class="item">
+
+								<h3>Outstanding support</h3>
+
+								<p>Lorem ipsum dolor sit.</p>
+
+							</div>
+
+						</div>
+
+						<div class="col-sm-12 col-lg-3">
+
+							<div class="item">
+
+								<h3>Deeply customisable</h3>
+
+								<p>Lorem ipsum dolor sit.</p>
+
+							</div>
+
+						</div>
+
+						<div class="col-sm-12 col-lg-3">
+
+							<div class="item">
+
+								<h3>Smooth and fluent</h3>
+
+								<p>Lorem ipsum dolor sit.</p>
+
+							</div>
+
+						</div>
+
+						<div class="col-sm-12 col-lg-3">
+
+							<div class="item">
+
+								<h3>Like by thousands</h3>
+
+								<p>Lorem ipsum dolor sit.</p>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<section id="features-container">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-lg-12">
+
+						<h1 class="title">Dream & create</h1>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="col-lg-12">
+
+				<div class="image">
+				</div>
+
+			</div>
+
+			<div class="features">
+
+				<div class="container">
+
+					<div class="item">
+
+						<div class="row">
+
+							<div class="col-sm-12 col-lg-6">
+
+								<div class="image">
+								</div>
+
+							</div>
+
+							<div class="col-sm-12 col-lg-6">
+
+								<h3>Not just responsive</h3>
+
+								<p>Lorem ipsum dolor sit.</p>
+
+								<a href="#" class="btn btn-black">Download now</a>
+								<a href="#" class="btn btn-black">Discover more</a>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="item">
+
+						<div class="row">
+							
+							<div class="col-sm-12 col-lg-6">
+
+								<h3>Hight resolution ready</h3>
+
+								<p>Lorem ipsum dolor sit.</p>
+
+								<a href="#" class="btn btn-orange">Download now</a>
+
+							</div>
+
+							<div class="col-sm-12 col-lg-6">
+
+								<div class="image">
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<section id="testemonials-container">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-lg-12">
+
+						<h1 class="title">Good words. Good people</h1>
+
+						<div class="testemonials flexslider">
+				
+							<ul class="slides">
+
+								<li>
+									
+									<p class="text">Lorem ipsum dolor sit.</p>
+
+									<div class="image">
+
+									</div>
+
+									<div class="info">
+
+										<span class="author">
+											David J. Groves
+										</span>
+
+										<span class="function">
+											Web designer
+										</span>
+
+									</div>
+
+									
+								</li>
+
+							</ul>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<div class="start-green">
+
+			<div class="container">
+
+				<div class="row">
+
+					<div class="col-sm-12 col-lg-8">
+
+						<h2>Constantly Growing template collection</h2>
+
+					</div>
+
+					<div class="col-sm-12 col-lg-4">
+
+						<a href="#" class="btn btn-orange">Start a journey</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
 
 	</main>
 
