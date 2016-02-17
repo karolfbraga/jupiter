@@ -795,6 +795,52 @@ pointer-events: none !important;
 
 /* PARTNERS ------------------------------------------------------------------ */
 
+/* PLANS ------------------------------------------------------------------ */
+
+#plans-container {
+	width: 100%;
+	padding: 100px 0px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+}
+
+#plans-container .plan {
+	padding: 20px;
+	border: 1px solid #000;
+	transition: 0.2s all linear;
+}
+
+#plans-container .plan:hover {
+	border: 1px solid #fff;
+	transition: 0.2s all linear;
+}
+
+#plans-container h3 {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+#plans-container p {
+	color: #fff;
+}
+
+#plans-container .desc {
+	color: #ccc;
+	margin: 0;
+}
+
+#plans-container .price {
+	font-size: 18px;
+}
+
+#plans-container .price span {
+	font-size: 38px;
+}
+
+/* PLANS ------------------------------------------------------------------ */
+
+
 /* FOOTER ------------------------------------------------------------------ */
 
 #footer-container .info {
