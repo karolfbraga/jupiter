@@ -36,9 +36,8 @@ body {
 
 p {
 	color: #777777;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 300;
+	font-size: 14px;
+	line-height: 28px;
 	text-align: center;
 	margin: 30px 0px;
 }
@@ -129,8 +128,7 @@ h2.title {
 	border: 1px solid #fff;
 }
 
-.btn-white:hover,
-.btn-white:visited {
+.btn-white:hover {
 	background: #f97352;
 	color: #fff;
 	border: 1px solid #f97352;
@@ -149,6 +147,20 @@ h2.title {
 	background: #000;
 	color: #fff;
 	border: 1px solid #000;
+}
+
+.btn-orange {
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	background: #f97352;
+}
+
+.btn-orange:hover {
+	background: #fff;
+	color: #f97352;
+	border: 1px solid #f97352;
 }
 
 /* flexslider */
@@ -291,6 +303,32 @@ pointer-events: none !important;
 
 /* HEADER ------------------------------------------------------------------ */
 
+/* START & BARS ------------------------------------------------------------------ */
+
+.start {
+	width: 100%;
+	padding: 50px 0px;
+	background: #3d4045;
+}
+
+.start h2 {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin: 20px 0px;
+}
+
+.start p {
+	color: #b6b6b6;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: left;
+}
+
+
+/* START & BARS ------------------------------------------------------------------ */
 
 /* HOME ------------------------------------------------------------------ */
 
@@ -362,7 +400,201 @@ pointer-events: none !important;
 
 /* TEMPLATES ------------------------------------------------------------------ */
 
+/* BENEFITS ------------------------------------------------------------------ */
 
+#benefits-container {
+	width: 100%;
+	position: relative;
+}
+
+#benefits-container .item {
+	min-height: 300px;
+	padding: 200px 0px;
+	text-align: center;
+}
+
+#benefits-container .item .icon {
+	font-size: 70px;
+	top: 0px;
+	transition: 0.2s all linear;
+	position: relative;
+}
+
+#benefits-container .item:hover .icon {
+	top: -30px;
+	transition: 0.2s all linear;
+}
+
+#benefits-container .item h2 {
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: #fff;
+	top: 0px;
+	transition: 0.2s all linear;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+#benefits-container .item:hover h2 {
+	top: -30px;
+	transition: 0.2s all linear;
+}
+
+#benefits-container .item .separator {
+	height: 2px;
+	background: #fff;
+	top: 0px;
+	transition: 0.2s all linear;
+	position: relative;
+}
+
+#benefits-container .item:hover .separator {
+	top: -30px;
+	transition: 0.2s all linear;
+}
+
+#benefits-container .item .text {
+	max-width: 300px;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 26px;
+	color: #fff;
+	opacity: 0;
+	top: -20px;
+	transition: 0.2s all linear;
+	position: relative;
+}
+
+#benefits-container .item:hover .text {
+	opacity: 1;
+	top: 0px;
+	transition: 0.2s all linear;
+}
+
+#benefits-container .item .text {
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
+	opacity: 0;
+	top: -20px;
+	transition: 0.2s all linear;
+}
+
+#benefits-container .item:hover .btn {
+	opacity: 1;
+	transition: 0.2s all fade-in;
+}
+
+#benefits-container .item .btn {
+	opacity: 0;
+	top: 50px;
+	transition: 0.4s all fade-in;
+	position: relative;
+}
+
+#benefits-container .item:nth-child(1) {
+	background: #3edbd9;
+}
+
+#benefits-container .item:nth-child(1) .icon {
+	color: #5841b8;
+}
+
+#benefits-container .item:nth-child(2) {
+	background: #3a98fe;
+}
+
+#benefits-container .item:nth-child(2) .icon {
+	color: #3edbd9;
+}
+
+#benefits-container .item:nth-child(3) {
+	background: #5841b8;
+}
+
+#benefits-container .item:nth-child(3) .icon {
+	color: #3a98fe;
+}
+
+#benefits-container .image {
+	margin: 35px 0px;
+	transition: 0.1s all linear;
+	opacity: 1;
+}
+
+#benefits-container .image:hover {
+	transition: 0.1s all linear;
+	opacity: 0.6;
+}
+
+#benefits-container .benefits .item {
+	background: none;
+	padding: 100px 0px;
+}
+
+#benefits-container .benefits .item .icon {
+	font-size: 16px;
+	line-height: 18px;
+	color: #000;
+}
+
+#benefits-container .benefits .item:hover .icon {
+	top: -10px;
+}
+
+#benefits-container .benefits .item h3 {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#benefits-container .benefits .item p {
+	max-width: 250px;
+	color: #999999;
+	margin: 0 auto;
+}
+
+/* BENEFITS ------------------------------------------------------------------ */
+
+
+/* FEATURES ------------------------------------------------------------------ */
+
+#features-container {
+	width: 100%;
+	background: #fafafa;
+	border-top: 1px solid #c4cacc;
+	padding-top: 50px;
+}
+
+#features-container .image img {
+	width: 100%;
+	height: auto;
+}
+
+#features-container .features {
+	width: 100%;
+	background: #c4cacc;
+	padding: 100px 0px;
+}
+
+#features-container .features .item .info .title,
+#features-container .features .item .info .text,
+#features-container .features .item .info .btn {
+	text-align: left;
+}
+
+#features-container .features .item {
+	margin-bottom: 120px;
+}
+
+#features-container .features .item .info .separator {
+	margin: 50px 0px;
+}
+
+/* FEATURES ------------------------------------------------------------------ */
 
 
 /* IE FIX ------------------------------------------------------------------- */
