@@ -52,15 +52,6 @@ function flexslider() {
         slideshow: true
     });
 
-    if (typeof mqLg !== 'undefined' && mqLg.matches == false) {
-        $('.gallery').flexslider({
-            animation: 'slide',
-            animationLoop: true,
-            directionNav: false,
-            controlNav: false,
-            slideshow: true
-        });
-    }
 }
 
 function inputMasks() {
