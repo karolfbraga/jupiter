@@ -1,0 +1,129 @@
+/* flexslider */
+.flexslider .flex-direction-nav {
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 30%;
+}
+
+.flexslider .flex-direction-nav li a {
+	width: 40px;
+	height: 130px;
+	display: block;
+	background: #454442;
+	border-radius: 0;
+	border: 0;
+	position: absolute;
+	color: #fff;
+	text-indent: -9999;
+	opacity: 0.7;
+}
+
+.flexslider .flex-direction-nav .flex-next {
+	left: 0px;
+	right: auto;
+}
+
+.flexslider .flex-direction-nav li i {
+	font-size: 30px;
+	color: #fff;
+	line-height: 130px;
+}
+
+.flexslider .flex-direction-nav .flex-prev {
+	right: 0px;
+	left: auto;
+}
+
+/* BENEFITS ------------------------------------------------------------------ */
+
+#benefits-container .item {
+	min-height: 300px;
+	padding: 200px 0px;
+}
+
+#benefits-container .item .icon {
+	top: 0px;
+	transition: 0.2s all linear;
+	position: relative;
+}
+
+#benefits-container .item:hover .icon {
+	top: -30px;
+	transition: 0.2s all linear;
+}
+
+#benefits-container .item h2 {
+	top: 0px;
+	transition: 0.2s all linear;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+#benefits-container .item:hover h2 {
+	top: -30px;
+	transition: 0.2s all linear;
+}
+
+#benefits-container .item .text {
+	margin: 0 auto;
+	padding: 0;
+}
+
+#benefits-container .benefits .item {
+	padding: 100px 0px;
+}
+
+/* BENEFITS ------------------------------------------------------------------ */
+
+/* TESTEMONIALS ------------------------------------------------------------------ */
+
+#testimonials-container {
+	width: 100%;
+	min-height: 660px;
+	background: url('../images/bg-testimonials.jpg') no-repeat center;
+	background-size: cover;
+	padding: 50px 0px;
+}
+
+
+#testimonials-container .flexslider .flex-direction-nav {
+	display: block;
+}
+
+#testimonials-container .flexslider .flex-direction-nav li a {
+	width: 75px;
+	height: 75px;
+	display: block;
+	background: transparent;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	position: absolute;
+	color: #fff;
+	text-align: center;
+	text-indent: -9999;
+	opacity: 0.4;
+	transition: 0.2s all linear;
+}
+
+#testimonials-container .flexslider .flex-direction-nav li a:hover {
+	background: #fff;
+	color: #000;
+	opacity: 0.3;
+	transition: 0.2s all linear;
+}
+
+#testimonials-container .flexslider .flex-direction-nav li i {
+	font-size: 30px;
+	color: #fff;
+	line-height: 75px;
+}
+
+#testimonials-container .flexslider .flex-direction-nav li a:hover i {
+	color: #000;
+	opacity: 0.4;
+	transition: 0.2s all linear;
+}
+
+/* TESTEMONIALS ------------------------------------------------------------------ */
+

@@ -1,4 +1,109 @@
+
+/* HEADER ------------------------------------------------------------------ */
+
+#header-container {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+	background: none;
+}
+
+#header-container .logo {
+	position: relative;
+	top: 40px;
+	left: 0;
+}
+
+#header-container .nav-header {
+	width: 650px;
+	position: relative;
+	left: 400px;
+	top: 20px;
+	display: block;
+}
+
+#header-container .nav-header .btn-nav-top {
+	display: none;
+}
+
+#header-container .nav-header li {
+	display: inline-block;
+}
+
+#header-container .nav-header a {
+	cursor: pointer;
+	color: #000;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-size: 14px;
+	display: inline-block;
+	margin: 0 15px;
+	padding-bottom: 5px;
+	border-bottom: 2px transparent;
+	-webkit-transition: all 0.1s linear;
+	display: inline-block;
+}
+
+#header-container .nav-header a:hover {
+	border-bottom: 2px solid #000;
+	transition: all 0.1s linear;
+	-webkit-transition: all 0.1s linear;
+}
+
+#benefits-container .item .separator {
+	top: 0px;
+	transition: 0.2s all linear;
+	position: relative;
+}
+
+#benefits-container .item:hover .separator {
+	top: -30px;
+	transition: 0.2s all linear;
+}
+
+#benefits-container .item .text {
+	opacity: 0;
+	top: -20px;
+	transition: 0.2s all linear;
+	position: relative;
+}
+
+#benefits-container .item:hover .text {
+	opacity: 1;
+	top: 0px;
+	transition: 0.2s all linear;
+}
+
+#benefits-container .item .text {
+	opacity: 0;
+	top: -20px;
+	transition: 0.2s all linear;
+}
+
+#benefits-container .item:hover .btn {
+	opacity: 1;
+	transition: 0.2s all fade-in;
+}
+
+#benefits-container .item .btn {
+	opacity: 0;
+	top: 50px;
+	transition: 0.4s all fade-in;
+	position: relative;
+}
+
+
+/* HEADER ------------------------------------------------------------------ */
+
+
 /* HOME ------------------------------------------------------------------ */
+
+#banner-container {
+	top: -100px;
+}
 
 #banner-container .info {
 	top: -580px;

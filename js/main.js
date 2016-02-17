@@ -9,10 +9,33 @@ $(function() {
     responsive();
 
     $(window).resize(responsive);
+
+    var $btnNavTop = $('.btn-nav-top');
+
+    $('body').on('click', '.btn-nav-top', function() {
+
+        $($btnNavTop).toggleClass('click')
+            
+        $('.nav-top').toggleClass('ative');
+
+    });
+
+    if (typeof mqLg !== 'undefined' && mqLg.matches == false) {
+        $('.nav-header').addClass('nav-mobile');
+    }
 });
 
 function flexslider() {
     $('.banner').flexslider({
+        animation: 'slide',
+        animationLoop: true,
+        controlNav: true,
+        slideshow: true,
+        prevText: '<i class="icon icon-arrow-right"></i>',
+        nextText: '<i class="icon icon-arrow-left"></i>'
+    });
+
+    $('.testimonials').flexslider({
         animation: 'slide',
         animationLoop: true,
         controlNav: true,

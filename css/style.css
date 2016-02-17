@@ -149,6 +149,19 @@ h2.title {
 	border: 1px solid #000;
 }
 
+.btn-grey {
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	background: #3d4045;
+}
+
+.btn-grey:hover {
+	background: #fff;
+	color: #3d4045;
+}
+
 .btn-orange {
 	font-weight: 700;
 	text-align: center;
@@ -169,38 +182,7 @@ h2.title {
 }
 
 .flexslider .flex-direction-nav {
-	position: absolute;
-	width: 100%;
-	top: 30%;
-}
-
-.flexslider .flex-direction-nav li a {
-	width: 40px;
-	height: 130px;
-	display: block;
-	background: #454442;
-	border-radius: 0;
-	border: 0;
-	position: absolute;
-	color: #fff;
-	text-indent: -9999;
-	opacity: 0.7;
-}
-
-.flexslider .flex-direction-nav .flex-next {
-	left: 0px;
-	right: auto;
-}
-
-.flexslider .flex-direction-nav li i {
-	font-size: 30px;
-	color: #fff;
-	line-height: 130px;
-}
-
-.flexslider .flex-direction-nav .flex-prev {
-	right: 0px;
-	left: auto;
+	display: none;
 }
 
 .flexslider .flex-control-nav {
@@ -257,10 +239,11 @@ pointer-events: none !important;
 
 #header-container {
 	width: 100%;
-	height: 100px;
+	min-height: 100px;
 	position: relative;
 	top: 0;
 	z-index: 999;
+	background: #fff;
 }
 
 #header-container .logo {
@@ -269,37 +252,45 @@ pointer-events: none !important;
 	left: 0;
 }
 
-#header-container .nav-header {
-	width: 650px;
+#header-container .nav-mobile ul {
+	
+	height: auto;
+	background: #000;
+	margin-top: 60px;
+	opacity: 0;
+	top: -800px;
+	position: absolute;
+	transition: 0.4s opacity fade-in;
+}
+
+#header-container .nav-mobile ul.ative {
+	opacity: 1;
+	top: 0;
 	position: relative;
-	left: 400px;
-	top: 20px;
+	transition: 0.4s opacity fade-in;
 }
 
-#header-container .nav-header li {
-	display: inline-block;
-}
-
-#header-container .nav-header a {
-	cursor: pointer;
-	color: #000;
-	font-weight: 700;
-	letter-spacing: 1px;
+#header-container .nav-mobile ul li {
+	width: 100%;
+	line-height: 50px;
+	text-align: center;
 	text-transform: uppercase;
+	letter-spacing: 3px;
 	font-size: 14px;
-	display: inline-block;
-	margin: 0 15px;
-	padding-bottom: 5px;
-	border-bottom: 2px transparent;
-	-webkit-transition: all 0.1s linear;
-	display: inline-block;
+	font-weight: 700;
+	color: #fff;
+	border-bottom: 1px solid #fff;
 }
 
-#header-container .nav-header a:hover {
-	border-bottom: 2px solid #000;
-	transition: all 0.1s linear;
-	-webkit-transition: all 0.1s linear;
+#header-container .nav-mobile .btn-nav-top {
+	font-size: 35px;
+	position: absolute;
+	left: auto;
+	right: 20px;
+	top: 30px;
+	display: block;
 }
+
 
 /* HEADER ------------------------------------------------------------------ */
 
@@ -327,6 +318,21 @@ pointer-events: none !important;
 	text-align: left;
 }
 
+.start-green {
+	width: 100%;
+	padding: 50px 0px;
+	background: #7ac673;
+}
+
+.start-green h2 {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	margin: 20px 0px;
+}
+
 
 /* START & BARS ------------------------------------------------------------------ */
 
@@ -336,7 +342,7 @@ pointer-events: none !important;
 	width: 100%;
 	height: auto;
 	position: relative;
-	top: -100px;
+	top: -30px;
 }
 
 #banner-container .info {
@@ -388,10 +394,17 @@ pointer-events: none !important;
 }
 
 #templates-container .image {
-	margin: 35px 0px;
+	margin: 35px auto;
 	transition: 0.1s all linear;
 	opacity: 1;
 }
+
+#templates-container .image img {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
 
 #templates-container .image:hover {
 	transition: 0.1s all linear;
@@ -408,21 +421,13 @@ pointer-events: none !important;
 }
 
 #benefits-container .item {
-	min-height: 300px;
-	padding: 200px 0px;
+	min-height: 200px;
+	padding: 130px 0px;
 	text-align: center;
 }
 
 #benefits-container .item .icon {
 	font-size: 70px;
-	top: 0px;
-	transition: 0.2s all linear;
-	position: relative;
-}
-
-#benefits-container .item:hover .icon {
-	top: -30px;
-	transition: 0.2s all linear;
 }
 
 #benefits-container .item h2 {
@@ -431,28 +436,11 @@ pointer-events: none !important;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	color: #fff;
-	top: 0px;
-	transition: 0.2s all linear;
-	position: relative;
-	margin-bottom: 30px;
-}
-
-#benefits-container .item:hover h2 {
-	top: -30px;
-	transition: 0.2s all linear;
 }
 
 #benefits-container .item .separator {
 	height: 2px;
 	background: #fff;
-	top: 0px;
-	transition: 0.2s all linear;
-	position: relative;
-}
-
-#benefits-container .item:hover .separator {
-	top: -30px;
-	transition: 0.2s all linear;
 }
 
 #benefits-container .item .text {
@@ -461,37 +449,8 @@ pointer-events: none !important;
 	font-size: 14px;
 	line-height: 26px;
 	color: #fff;
-	opacity: 0;
-	top: -20px;
-	transition: 0.2s all linear;
-	position: relative;
-}
-
-#benefits-container .item:hover .text {
-	opacity: 1;
-	top: 0px;
-	transition: 0.2s all linear;
-}
-
-#benefits-container .item .text {
-	font-size: 14px;
-	line-height: 18px;
-	color: #fff;
-	opacity: 0;
-	top: -20px;
-	transition: 0.2s all linear;
-}
-
-#benefits-container .item:hover .btn {
-	opacity: 1;
-	transition: 0.2s all fade-in;
-}
-
-#benefits-container .item .btn {
-	opacity: 0;
-	top: 50px;
-	transition: 0.4s all fade-in;
-	position: relative;
+	margin: 30px 0px;
+	padding: 0px 10px;
 }
 
 #benefits-container .item:nth-child(1) {
@@ -531,7 +490,7 @@ pointer-events: none !important;
 
 #benefits-container .benefits .item {
 	background: none;
-	padding: 100px 0px;
+	padding: 40px 0 0 0;
 }
 
 #benefits-container .benefits .item .icon {
@@ -595,6 +554,64 @@ pointer-events: none !important;
 }
 
 /* FEATURES ------------------------------------------------------------------ */
+
+
+/* TESTEMONIALS ------------------------------------------------------------------ */
+#testimonials-container {
+	width: 100%;
+	background: #3d4045;
+	padding: 50px 0px;
+}
+
+#testimonials-container h1 {
+	color: #fff;
+}
+
+#testimonials-container .separator {
+	background: #fff;
+}
+
+#testimonials-container .text {
+	max-width: 580px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #fff;
+	margin: 80px auto;
+}
+
+#testimonials-container .image img {
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	margin: 30px auto;
+}
+
+#testimonials-container .info {
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#testimonials-container .info .author {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 0 auto;
+}
+
+#testimonials-container .info .function {
+	font-size: 14px;
+	display: block;
+	margin: 10px 0;
+}
+
+#testimonials-container .flexslider .flex-direction-nav {
+	display: none;
+}
+
+/* TESTEMONIALS ------------------------------------------------------------------ */
 
 
 /* IE FIX ------------------------------------------------------------------- */
