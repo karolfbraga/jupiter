@@ -43,6 +43,24 @@ function flexslider() {
         prevText: '<i class="icon icon-arrow-right"></i>',
         nextText: '<i class="icon icon-arrow-left"></i>'
     });
+
+    $('.modes').flexslider({
+        animation: 'slide',
+        animationLoop: true,
+        directionNav: false,
+        controlNav: true,
+        slideshow: true
+    });
+
+    if (typeof mqLg !== 'undefined' && mqLg.matches == false) {
+        $('.gallery').flexslider({
+            animation: 'slide',
+            animationLoop: true,
+            directionNav: false,
+            controlNav: false,
+            slideshow: true
+        });
+    }
 }
 
 function inputMasks() {

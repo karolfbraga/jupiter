@@ -614,6 +614,88 @@ pointer-events: none !important;
 /* TESTEMONIALS ------------------------------------------------------------------ */
 
 
+/* MODES ------------------------------------------------------------------ */
+
+#modes-container {
+	padding: 80px 0;
+}
+
+#modes-container .modes {
+	background: #e1ecec;
+	margin-top: 150px;
+}
+
+#modes-container .modes .info {
+	padding: 20px;
+	text-align: center;
+}
+
+#modes-container .modes h3 {
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#modes-container .modes .flex-control-nav {
+	width: 100%;
+	position: absolute;
+	top: -100px;
+	display: block;
+	text-align: center;
+}
+
+#modes-container .modes .flex-control-nav li {
+	margin: 0px 15px;
+	display: inline-block;
+	text-align: center;
+}
+
+#modes-container .modes .flex-control-nav li a {
+	font-size: 0;
+	color: #a7a7a7;
+	transition: 0.2s all linear;
+}
+
+#modes-container .modes .flex-control-nav li a:hover {
+	color: #222222;
+	transition: 0.2s all linear;
+	cursor: pointer;
+}
+
+
+#modes-container .modes .flex-control-nav li:nth-child(1) > a:after {
+	content: "\e90a";
+	font-family: 'icomoon';
+	display: block;
+	font-size: 30px;
+}
+
+#modes-container .modes .flex-control-nav li:nth-child(2) > a:after {
+	content: "\e908";
+	font-family: 'icomoon';
+	display: block;
+	font-size: 30px;
+}
+
+#modes-container .modes .flex-control-nav li:nth-child(3) > a:after {
+	content: "\e906";
+	font-family: 'icomoon';
+	display: block;
+	font-size: 30px;
+}
+
+#modes-container .modes .flex-control-nav li:nth-child(4) > a:after {
+	content: "\e90c";
+	font-family: 'icomoon';
+	display: block;
+	font-size: 30px;
+}
+
+/* MODES ------------------------------------------------------------------ */
+
+
 /* IE FIX ------------------------------------------------------------------- */
 
 .lt-ie11 #banner-container {
@@ -642,7 +724,6 @@ pointer-events: none !important;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
     font-style: normal;
@@ -650,8 +731,6 @@ pointer-events: none !important;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-
-    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
